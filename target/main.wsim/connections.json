@@ -1,0 +1,185 @@
+{
+  "version": "connections-0.1",
+  "connections": [
+    {
+      "source": "root/Default/ProductService/cloud.Api",
+      "target": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "name": "post()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api",
+      "target": "root/Default/ProductService/cloud.Api/OnRequestHandler1",
+      "name": "get()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api",
+      "target": "root/Default/ProductService/cloud.Api/OnRequestHandler2",
+      "name": "get()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api",
+      "target": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "name": "post()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api",
+      "target": "root/Default/OrderService/cloud.Api/OnRequestHandler1",
+      "name": "get()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api",
+      "target": "root/Default/OrderService/cloud.Api/OnRequestHandler2",
+      "name": "get()"
+    },
+    {
+      "source": "root/Default/cloud.Queue",
+      "target": "root/Default/cloud.Queue/SetConsumer0",
+      "name": "setConsumer()"
+    },
+    {
+      "source": "root/Default/cloud.Queue/SetConsumer0",
+      "target": "root/Default/OrderService/$Closure7_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/cloud.Queue/SetConsumer0",
+      "target": "root/Default/ProductStorage",
+      "name": "updateProduct()"
+    },
+    {
+      "source": "root/Default/cloud.Queue/SetConsumer0",
+      "target": "root/Default/OrderStorage",
+      "name": "updateOrderStatus()"
+    },
+    {
+      "source": "root/Default/cloud.Queue/SetConsumer0",
+      "target": "root/Default/ProductStorage/ex.Table",
+      "name": "tryGet()"
+    },
+    {
+      "source": "root/Default/cloud.Queue/SetConsumer0",
+      "target": "root/Default/ProductStorage/ex.Table",
+      "name": "update()"
+    },
+    {
+      "source": "root/Default/cloud.Queue/SetConsumer0",
+      "target": "root/Default/OrderStorage/ex.Table",
+      "name": "update()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/ProductService/$Closure1_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/ProductStorage",
+      "name": "add()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/ProductStorage",
+      "name": "_add()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/ProductStorage/cloud.Counter",
+      "name": "inc()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/ProductStorage/ex.Table",
+      "name": "insert()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler1",
+      "target": "root/Default/ProductService/$Closure2_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler1",
+      "target": "root/Default/ProductStorage",
+      "name": "get()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler1",
+      "target": "root/Default/ProductStorage/ex.Table",
+      "name": "tryGet()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler2",
+      "target": "root/Default/ProductService/$Closure3_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler2",
+      "target": "root/Default/ProductStorage",
+      "name": "list()"
+    },
+    {
+      "source": "root/Default/ProductService/cloud.Api/OnRequestHandler2",
+      "target": "root/Default/ProductStorage/ex.Table",
+      "name": "list()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/OrderService/$Closure4_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/OrderService/cloud.Counter",
+      "name": "inc()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/OrderStorage",
+      "name": "add()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/cloud.Queue",
+      "name": "push()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/OrderStorage/cloud.Counter",
+      "name": "inc()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "target": "root/Default/OrderStorage/ex.Table",
+      "name": "insert()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler1",
+      "target": "root/Default/OrderService/$Closure5_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler1",
+      "target": "root/Default/OrderStorage",
+      "name": "get()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler1",
+      "target": "root/Default/OrderStorage/ex.Table",
+      "name": "tryGet()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler2",
+      "target": "root/Default/OrderService/$Closure6_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler2",
+      "target": "root/Default/OrderStorage",
+      "name": "list()"
+    },
+    {
+      "source": "root/Default/OrderService/cloud.Api/OnRequestHandler2",
+      "target": "root/Default/OrderStorage/ex.Table",
+      "name": "list()"
+    }
+  ]
+}

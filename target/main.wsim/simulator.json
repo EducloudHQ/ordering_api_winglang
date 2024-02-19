@@ -1,0 +1,709 @@
+{
+  "types": {
+    "@winglang/sdk.cloud.Api": {
+      "className": "Api",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/api.inflight.js"
+    },
+    "@winglang/sdk.cloud.Bucket": {
+      "className": "Bucket",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/bucket.inflight.js"
+    },
+    "@winglang/sdk.cloud.Counter": {
+      "className": "Counter",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/counter.inflight.js"
+    },
+    "@winglang/sdk.cloud.Domain": {
+      "className": "Domain",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/domain.inflight.js"
+    },
+    "@winglang/sdk.ex.DynamodbTable": {
+      "className": "DynamodbTable",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/dynamodb-table.inflight.js"
+    },
+    "@winglang/sdk.cloud.Endpoint": {
+      "className": "Endpoint",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/endpoint.inflight.js"
+    },
+    "@winglang/sdk.sim.EventMapping": {
+      "className": "EventMapping",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/event-mapping.inflight.js"
+    },
+    "@winglang/sdk.cloud.Function": {
+      "className": "Function",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/function.inflight.js"
+    },
+    "@winglang/sdk.cloud.OnDeploy": {
+      "className": "OnDeploy",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/on-deploy.inflight.js"
+    },
+    "@winglang/sdk.cloud.Queue": {
+      "className": "Queue",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/queue.inflight.js"
+    },
+    "@winglang/sdk.ex.ReactApp": {
+      "className": "ReactApp",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/react-app.inflight.js"
+    },
+    "@winglang/sdk.ex.Redis": {
+      "className": "Redis",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/redis.inflight.js"
+    },
+    "@winglang/sdk.cloud.Schedule": {
+      "className": "Schedule",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/schedule.inflight.js"
+    },
+    "@winglang/sdk.cloud.Secret": {
+      "className": "Secret",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/secret.inflight.js"
+    },
+    "@winglang/sdk.cloud.Service": {
+      "className": "Service",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/service.inflight.js"
+    },
+    "@winglang/sdk.sim.State": {
+      "className": "State",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/state.inflight.js"
+    },
+    "@winglang/sdk.ex.Table": {
+      "className": "Table",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/table.inflight.js"
+    },
+    "@winglang/sdk.std.TestRunner": {
+      "className": "TestRunner",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/test-runner.inflight.js"
+    },
+    "@winglang/sdk.cloud.Topic": {
+      "className": "Topic",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/topic.inflight.js"
+    },
+    "@winglang/sdk.cloud.Website": {
+      "className": "Website",
+      "sourcePath": "/home/fonchu/.nvm/versions/node/v21.4.0/lib/node_modules/winglang/node_modules/@winglang/sdk/lib/target-sim/website.inflight.js"
+    }
+  },
+  "resources": [
+    {
+      "type": "@winglang/sdk.ex.Table",
+      "path": "root/Default/ProductStorage/ex.Table",
+      "addr": "c87c4ded9cea3e26eb807f5bff67a61abb0a5cc554",
+      "props": {
+        "name": "ProductsTable",
+        "columns": {
+          "id": 0,
+          "name": 0,
+          "qty": 1,
+          "price": 1,
+          "imageUrl": 0
+        },
+        "primaryKey": "id",
+        "initialRows": {}
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Counter",
+      "path": "root/Default/ProductStorage/cloud.Counter",
+      "addr": "c890298d14bb714da2f65d9e8041c1ae6a94260b7c",
+      "props": {
+        "initial": 0
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.ex.Table",
+      "path": "root/Default/OrderStorage/ex.Table",
+      "addr": "c8842701db49aaa6e821de5f32a360235bad01cb57",
+      "props": {
+        "name": "OrdersTable",
+        "columns": {
+          "id": 0,
+          "prodId": 0,
+          "qty": 1,
+          "status": 0
+        },
+        "primaryKey": "id",
+        "initialRows": {}
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Counter",
+      "path": "root/Default/OrderStorage/cloud.Counter",
+      "addr": "c845f271893880a94eae40b7b16df159df52f7793a",
+      "props": {
+        "initial": 0
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/cloud.Queue/SetConsumer0",
+      "addr": "c816f5a61689ccb1619400ee8ff6fd5244ede3a220",
+      "props": {
+        "sourceCodeFile": ".wing/setconsumer0_c816f5a6.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TABLE_HANDLE_0a5cc554": "${wsim#root/Default/ProductStorage/ex.Table#attrs.handle}",
+          "COUNTER_HANDLE_94260b7c": "${wsim#root/Default/ProductStorage/cloud.Counter#attrs.handle}",
+          "TABLE_HANDLE_ad01cb57": "${wsim#root/Default/OrderStorage/ex.Table#attrs.handle}",
+          "COUNTER_HANDLE_52f7793a": "${wsim#root/Default/OrderStorage/cloud.Counter#attrs.handle}"
+        },
+        "timeout": 3000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Queue",
+      "path": "root/Default/cloud.Queue",
+      "addr": "c8ee463274f773a29beebed29d7c46fd3e25e0ce1c",
+      "props": {
+        "timeout": 30,
+        "retentionPeriod": 3600
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/cloud.Queue/QueueEventMapping0",
+      "addr": "c8572214064b5e18a140583f583648a9a7d06f1c1f",
+      "props": {
+        "subscriber": "${wsim#root/Default/cloud.Queue/SetConsumer0#attrs.handle}",
+        "publisher": "${wsim#root/Default/cloud.Queue#attrs.handle}",
+        "subscriptionProps": {
+          "batchSize": 1
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Endpoint",
+      "path": "root/Default/ProductService/cloud.Api/Endpoint",
+      "addr": "c8df1cc8aa954f5caf1b328dd6dea6afe9ee4f137c",
+      "props": {
+        "inputUrl": "${wsim#root/Default/ProductService/cloud.Api#attrs.url}",
+        "url": "${wsim#root/Default/ProductService/cloud.Api#attrs.url}",
+        "label": "Api root/Default/ProductService/cloud.Api"
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/ProductService/cloud.Api/OnRequestHandler0",
+      "addr": "c84ad3c9450378141f1d3aeed57d97f4efb562bbe9",
+      "props": {
+        "sourceCodeFile": ".wing/onrequesthandler0_c84ad3c9.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "COUNTER_HANDLE_94260b7c": "${wsim#root/Default/ProductStorage/cloud.Counter#attrs.handle}",
+          "TABLE_HANDLE_0a5cc554": "${wsim#root/Default/ProductStorage/ex.Table#attrs.handle}"
+        },
+        "timeout": 60000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Api",
+      "path": "root/Default/ProductService/cloud.Api",
+      "addr": "c8fd342150a1f32d92a4d276fd817afe5cc664f4f4",
+      "props": {
+        "openApiSpec": {
+          "openapi": "3.0.3",
+          "paths": {
+            "/product": {
+              "post": {
+                "operationId": "post-product",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": []
+              }
+            },
+            "/product/{id}": {
+              "get": {
+                "operationId": "get-product/:id",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": [
+                  {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            },
+            "/products": {
+              "get": {
+                "operationId": "get-products",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": []
+              }
+            }
+          }
+        },
+        "corsHeaders": {
+          "defaultResponse": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Expose-Headers": "",
+            "Access-Control-Allow-Credentials": "false"
+          },
+          "optionsResponse": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Methods": "POST",
+            "Access-Control-Max-Age": "300"
+          }
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/ProductService/cloud.Api/ApiEventMapping0",
+      "addr": "c8c14c31bfdd30fc85c5621a6ef360e28bb9f14b43",
+      "props": {
+        "subscriber": "${wsim#root/Default/ProductService/cloud.Api/OnRequestHandler0#attrs.handle}",
+        "publisher": "${wsim#root/Default/ProductService/cloud.Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "path": "/product",
+              "method": "POST"
+            }
+          ]
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/ProductService/cloud.Api/OnRequestHandler1",
+      "addr": "c83867a670d3934f129be8945ddc982b9ae1b2bfc6",
+      "props": {
+        "sourceCodeFile": ".wing/onrequesthandler1_c83867a6.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TABLE_HANDLE_0a5cc554": "${wsim#root/Default/ProductStorage/ex.Table#attrs.handle}",
+          "COUNTER_HANDLE_94260b7c": "${wsim#root/Default/ProductStorage/cloud.Counter#attrs.handle}"
+        },
+        "timeout": 60000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/ProductService/cloud.Api/ApiEventMapping1",
+      "addr": "c8f3b407dedf306cc79f5c48cd9d7553f872329793",
+      "props": {
+        "subscriber": "${wsim#root/Default/ProductService/cloud.Api/OnRequestHandler1#attrs.handle}",
+        "publisher": "${wsim#root/Default/ProductService/cloud.Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "path": "/product/:id",
+              "method": "GET"
+            }
+          ]
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/ProductService/cloud.Api/OnRequestHandler2",
+      "addr": "c843d075e7f189fdcab9d2e224446807c3269aab8c",
+      "props": {
+        "sourceCodeFile": ".wing/onrequesthandler2_c843d075.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TABLE_HANDLE_0a5cc554": "${wsim#root/Default/ProductStorage/ex.Table#attrs.handle}",
+          "COUNTER_HANDLE_94260b7c": "${wsim#root/Default/ProductStorage/cloud.Counter#attrs.handle}"
+        },
+        "timeout": 60000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/ProductService/cloud.Api/ApiEventMapping2",
+      "addr": "c8d70c2004d0645655de53746446a539948b8b398f",
+      "props": {
+        "subscriber": "${wsim#root/Default/ProductService/cloud.Api/OnRequestHandler2#attrs.handle}",
+        "publisher": "${wsim#root/Default/ProductService/cloud.Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "path": "/products",
+              "method": "GET"
+            }
+          ]
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Endpoint",
+      "path": "root/Default/OrderService/cloud.Api/Endpoint",
+      "addr": "c8b6d90b7a0335dc2b4c977b9f8e11ae6f58a35bc6",
+      "props": {
+        "inputUrl": "${wsim#root/Default/OrderService/cloud.Api#attrs.url}",
+        "url": "${wsim#root/Default/OrderService/cloud.Api#attrs.url}",
+        "label": "Api root/Default/OrderService/cloud.Api"
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Counter",
+      "path": "root/Default/OrderService/cloud.Counter",
+      "addr": "c89159e68fabc22179cfdae7499998e94c444dce03",
+      "props": {
+        "initial": 0
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/OrderService/cloud.Api/OnRequestHandler0",
+      "addr": "c8f5c02b54556a5b2d1383af67259fcc5c146b51f6",
+      "props": {
+        "sourceCodeFile": ".wing/onrequesthandler0_c8f5c02b.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "COUNTER_HANDLE_444dce03": "${wsim#root/Default/OrderService/cloud.Counter#attrs.handle}",
+          "QUEUE_HANDLE_25e0ce1c": "${wsim#root/Default/cloud.Queue#attrs.handle}",
+          "COUNTER_HANDLE_52f7793a": "${wsim#root/Default/OrderStorage/cloud.Counter#attrs.handle}",
+          "TABLE_HANDLE_ad01cb57": "${wsim#root/Default/OrderStorage/ex.Table#attrs.handle}"
+        },
+        "timeout": 60000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Api",
+      "path": "root/Default/OrderService/cloud.Api",
+      "addr": "c851dccd863f119b147d8908507aaccdced1309ecf",
+      "props": {
+        "openApiSpec": {
+          "openapi": "3.0.3",
+          "paths": {
+            "/order/{id}/{qty}": {
+              "post": {
+                "operationId": "post-order/:id/:qty",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": [
+                  {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "name": "qty",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            },
+            "/order/{id}": {
+              "get": {
+                "operationId": "get-order/:id",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": [
+                  {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            },
+            "/orders": {
+              "get": {
+                "operationId": "get-orders",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": []
+              }
+            }
+          }
+        },
+        "corsHeaders": {
+          "defaultResponse": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Expose-Headers": "",
+            "Access-Control-Allow-Credentials": "false"
+          },
+          "optionsResponse": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Methods": "POST",
+            "Access-Control-Max-Age": "300"
+          }
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/OrderService/cloud.Api/ApiEventMapping0",
+      "addr": "c898458f2f2e5c248928c4f537935ed3894eafc0bb",
+      "props": {
+        "subscriber": "${wsim#root/Default/OrderService/cloud.Api/OnRequestHandler0#attrs.handle}",
+        "publisher": "${wsim#root/Default/OrderService/cloud.Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "path": "/order/:id/:qty",
+              "method": "POST"
+            }
+          ]
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/OrderService/cloud.Api/OnRequestHandler1",
+      "addr": "c8fd2c090989d2f6f2531e8351a26433e392d022da",
+      "props": {
+        "sourceCodeFile": ".wing/onrequesthandler1_c8fd2c09.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TABLE_HANDLE_ad01cb57": "${wsim#root/Default/OrderStorage/ex.Table#attrs.handle}",
+          "COUNTER_HANDLE_52f7793a": "${wsim#root/Default/OrderStorage/cloud.Counter#attrs.handle}"
+        },
+        "timeout": 60000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/OrderService/cloud.Api/ApiEventMapping1",
+      "addr": "c85d0bd5b9c94671f68ed2389dcee7eda0e8ebbcb9",
+      "props": {
+        "subscriber": "${wsim#root/Default/OrderService/cloud.Api/OnRequestHandler1#attrs.handle}",
+        "publisher": "${wsim#root/Default/OrderService/cloud.Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "path": "/order/:id",
+              "method": "GET"
+            }
+          ]
+        }
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.cloud.Function",
+      "path": "root/Default/OrderService/cloud.Api/OnRequestHandler2",
+      "addr": "c8d50dc9b43afb63bec26cc171371e8d7375124d57",
+      "props": {
+        "sourceCodeFile": ".wing/onrequesthandler2_c8d50dc9.js",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TABLE_HANDLE_ad01cb57": "${wsim#root/Default/OrderStorage/ex.Table#attrs.handle}",
+          "COUNTER_HANDLE_52f7793a": "${wsim#root/Default/OrderStorage/cloud.Counter#attrs.handle}"
+        },
+        "timeout": 60000
+      },
+      "attrs": {}
+    },
+    {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "path": "root/Default/OrderService/cloud.Api/ApiEventMapping2",
+      "addr": "c8143b788939167aa28923617ef0a24dbe125a6e3f",
+      "props": {
+        "subscriber": "${wsim#root/Default/OrderService/cloud.Api/OnRequestHandler2#attrs.handle}",
+        "publisher": "${wsim#root/Default/OrderService/cloud.Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "path": "/orders",
+              "method": "GET"
+            }
+          ]
+        }
+      },
+      "attrs": {}
+    }
+  ],
+  "sdkVersion": "0.57.22"
+}
