@@ -116,7 +116,7 @@ pub interface IProductStorage extends std.IResource {
           allowHeaders: ["*"],
           allowMethods: [http.HttpMethod.POST],
         },
-      });
+      }) as "products api";
   
       this.productStorage = storage;
   

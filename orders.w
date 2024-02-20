@@ -110,7 +110,7 @@ pub class OrderService {
         allowHeaders: ["*"],
         allowMethods: [http.HttpMethod.POST],
       },
-    });
+    }) as "orders api";
 
     this.storage = storage;
     this.prodStorage = prodStore;
