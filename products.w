@@ -2,7 +2,6 @@ bring cloud;
 bring ex;
 bring util;
 bring http;
-bring expect;
 
 enum ColumnType {
   STRING,
